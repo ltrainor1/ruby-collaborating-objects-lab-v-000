@@ -19,7 +19,10 @@ class MP3Importer
     self.files.each do |file|
       Song.new_by_filename(file)
     end 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b3eb2e07d29eb6ccf6cb6665dfb35ed186bcc604
   end 
 
 

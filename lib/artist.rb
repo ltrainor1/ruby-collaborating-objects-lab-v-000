@@ -33,9 +33,13 @@ class Artist
   end 
   
   def self.find_or_create_by_name(name)
+<<<<<<< HEAD
     a = @@all.detect {|artist|artist.name == name}
     b = create_by_name(name)
     a || b 
+=======
+    @@all.detect {|artist|artist.name == name} || create_by_name(name)
+>>>>>>> b3eb2e07d29eb6ccf6cb6665dfb35ed186bcc604
   end 
   
   def print_songs 
